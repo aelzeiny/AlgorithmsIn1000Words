@@ -1,10 +1,17 @@
 @import './colors';
 $thumb-color: $warm-red !important;
+$thumb-color: gray !important;
 @import 'node_modules/input-range-scss/_inputrange';
 
 footer {
   margin-left: 250px;
   #timeline {
     width: 100%;
+    &:disabled {
+
+      @mixin thumb {
+        background: $thumb-color;
+      }
+    }
   }
 }
